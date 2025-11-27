@@ -39,5 +39,5 @@ async  def main():
                       allow_repeated_speaker=True)
 
     await Console(team.run_stream(task = "Research renewable energy tends future impact and write a brief summary which renewable company should i invest and why? what would be return in 3 month and 6 month"))
-
+    await ollama_model_client.close()
 asyncio.run(main())

@@ -1,0 +1,2 @@
+autogen-ext[ollama]
+pytest-playwright

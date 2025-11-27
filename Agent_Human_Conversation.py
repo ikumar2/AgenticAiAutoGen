@@ -16,5 +16,5 @@ async def main():
     team = RoundRobinGroupChat(participants=[user_proxy,assistant],
                         termination_condition=TextMentionTermination("LESSON COMPLETED"))
     await Console(team.run_stream(task='I need help with algebra problem can you help me solve 2*4*6'))
-
+    await ollama_model_client.close()
 asyncio.run(main())
